@@ -1,0 +1,104 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lexend", sans-serif;
+    background: rgb(28,35,51);
+    color: rgb(173, 215, 255);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(33, 43, 66, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+header button {
+    position: absolute;
+    left: 20px;
+    padding: 8px 16px;
+    background: rgba(28, 35, 51, 0.9);
+    color: rgba(173, 215, 255, 0.9);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background: rgba(173, 215, 255, 0.9);
+  color: rgba(28, 35, 51, 0.9);
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(173, 215, 255);
+    margin: 0;
+}
+
+.container {
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(33, 43, 66, 0.9);
+    border: 3px solid rgba(28, 35, 51, 0.9);
+    border-radius: 15px;
+    margin-top: 80px; 
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+pre {
+    background: #1e293b;
+    padding: 10px;
+    margin-top: 10px;
+    max-height: 200px;
+    max-width: 100%;  /* Ensures it doesn’t overflow horizontally */
+    overflow-y: auto;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    border-radius: 5px;
+    border: 3px solid rgba(28, 35, 51, 0.9);
+    color: rgb(173, 215, 255);
+    font-family: "Lexend", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box; /* Includes padding and borders in width calculation */
+    padding-right: 20px; /* Make space for vertical scrollbar */
+    padding-bottom: 20px; /* Make space for horizontal scrollbar */
+}
+
+/* Styling both vertical and horizontal scrollbars */
+.pdbOutput::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+    height: 8px; /* Height of the horizontal scrollbar */
+}
+
+.pdbOutput::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 215, 255); /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 2px solid #1e293b; /* Border around the thumb */
+}
+
+.pdbOutput::-webkit-scrollbar-track {
+    background-color: #1e293b; /* Scrollbar track color */
+    border-radius: 10px; /* Rounded corners for the track */
+    margin: 0; /* Remove any margin around the track */
+}
+
+.pdbOutput::-webkit-scrollbar-corner {
+    background: rgba(0,0,0,0);
+  }
